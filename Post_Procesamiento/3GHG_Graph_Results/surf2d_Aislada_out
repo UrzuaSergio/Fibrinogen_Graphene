@@ -1,0 +1,212 @@
+Package "cuda8" is ready
+Package "anaconda2" is ready
+Run started on:
+	Date: 2019/7/5
+	Time: 18:6:24
+
+Reading pqr for region 1 from /user/s/surzua/3GHG/3GHG-Test-Cluster/grafeno_isolated//grafeno_config_2_traslacion.pqr
+
+Reading surface 0 from file mesh/Graph_Config2_NanoShaper_d02
+Time load mesh: 14.000041
+Removed areas=0: 0
+
+Total elements : 927184
+Total equations: 1854368
+----------------------------
+1 surfaces:
+
+Surface 0:
+	927184 elements
+	Surface type       : dielectric_interface
+	Cells              : 3597
+	Twigs              : 2658
+	Levels             : 7
+	C0 size            : 336.101514
+	C0 box center      : 0.289041, -9.402702, 0.124483
+	Twig cell size     : 5.251586
+	Rbox/theta         : 10.503172
+	Analytic distance  : 1.950501
+	Elem. per sq Ang   : 2.006550
+	Max, min, avg elem.: 0.877957377312952, 0.004919278656469566, 0.49836791113475465
+	Total area         : 462078.753318
+----------------------------
+
+2 regions:
+
+Region 0:
+	Laplace or Yukawa: 2
+	kappa            : 0.125
+	dielectric const : 80.0
+	Number of charges: 0
+	Parent surface   : []
+	Child surfaces   : [0]
+Region 1:
+	Laplace or Yukawa: 1
+	kappa            : 1e-12
+	dielectric const : 4.0
+	Number of charges: 287448
+	Parent surface   : [0]
+	Child surfaces   : []
+----------------------------
+
+Parameters:
+	Data type               : <type 'numpy.float64'>
+	Use GPU                 : 1
+	P                       : 4
+	threshold               : 0.50
+	theta                   : 0.50
+	NCRIT                   : 700
+	CUDA block size         : 128
+	Gauss points per element: 1
+	Gauss points near singlr: 19
+	1D Gauss points per side: 9
+	GMRES tolerance         : 1e-05
+	GMRES max iterations    : 1000
+	GMRES restart iteration : 200
+----------------------------
+
+Generate interaction list
+Transfer data to GPU
+Generate RHS
+List time          : 1.623918s
+Data transfer time : 0.186553s
+RHS generation time: 22.644995s
+------------------------------
+Total setup time   : 147.677218s
+
+Solve
+Analytical integrals: 51 of 927184, 0%
+iteration: 1, rel resid: 0.7862797011819197
+iteration: 2, rel resid: 0.7118276681338533
+iteration: 3, rel resid: 0.6913969631989876
+iteration: 4, rel resid: 0.5854898377577633
+iteration: 5, rel resid: 0.45577100163966455
+iteration: 6, rel resid: 0.4020493000362403
+iteration: 7, rel resid: 0.3358298665930472
+iteration: 8, rel resid: 0.2911488412096118
+iteration: 9, rel resid: 0.25289714246812434
+iteration: 10, rel resid: 0.22180679641483725
+iteration: 11, rel resid: 0.19087822018158213
+iteration: 12, rel resid: 0.17295341300329062
+iteration: 13, rel resid: 0.15852946794042433
+iteration: 14, rel resid: 0.1361884151256353
+iteration: 15, rel resid: 0.11921128009921785
+iteration: 16, rel resid: 0.1051441043572418
+iteration: 17, rel resid: 0.09484286001956996
+iteration: 18, rel resid: 0.08144563019413584
+iteration: 19, rel resid: 0.07358613929635377
+iteration: 20, rel resid: 0.06685238256570716
+iteration: 21, rel resid: 0.058804871396070005
+iteration: 22, rel resid: 0.0539911044829841
+iteration: 23, rel resid: 0.04599356381028376
+iteration: 24, rel resid: 0.04006080482403667
+iteration: 25, rel resid: 0.034809672929560546
+iteration: 26, rel resid: 0.03094319528769636
+iteration: 27, rel resid: 0.027322406301997657
+iteration: 28, rel resid: 0.024014546016353642
+iteration: 29, rel resid: 0.021707421902669208
+iteration: 30, rel resid: 0.019325247432982997
+iteration: 31, rel resid: 0.017281156253322088
+iteration: 32, rel resid: 0.01565438788941584
+iteration: 33, rel resid: 0.014099460241377247
+iteration: 34, rel resid: 0.012610743249743388
+iteration: 35, rel resid: 0.011384657448385972
+iteration: 36, rel resid: 0.010115155866723154
+iteration: 37, rel resid: 0.009089411218620497
+iteration: 38, rel resid: 0.008048584172659237
+iteration: 39, rel resid: 0.007312549147943204
+iteration: 40, rel resid: 0.006576536821522412
+iteration: 41, rel resid: 0.005890593078811511
+iteration: 42, rel resid: 0.005354378895981964
+iteration: 43, rel resid: 0.004785364251057299
+iteration: 44, rel resid: 0.004320731411147639
+iteration: 45, rel resid: 0.00396824310211444
+iteration: 46, rel resid: 0.003559156411264155
+iteration: 47, rel resid: 0.003233751864126868
+iteration: 48, rel resid: 0.002961692556127907
+iteration: 49, rel resid: 0.002684090079714508
+iteration: 50, rel resid: 0.0024453870658690887
+iteration: 51, rel resid: 0.002221544095378376
+iteration: 52, rel resid: 0.002009257052607761
+iteration: 53, rel resid: 0.001804282811060265
+iteration: 54, rel resid: 0.0016534048142132583
+iteration: 55, rel resid: 0.001492458418930867
+iteration: 56, rel resid: 0.001352851305820799
+iteration: 57, rel resid: 0.0012382275120974315
+iteration: 58, rel resid: 0.0011244713278228033
+iteration: 59, rel resid: 0.0010189591938344026
+iteration: 60, rel resid: 0.0009136353253344215
+iteration: 61, rel resid: 0.0008183158852742953
+iteration: 62, rel resid: 0.0007404216925041879
+iteration: 63, rel resid: 0.0006680752349722823
+iteration: 64, rel resid: 0.0005875567268062646
+iteration: 65, rel resid: 0.0005294567118250109
+iteration: 66, rel resid: 0.0004764592119572088
+iteration: 67, rel resid: 0.0004322660245220325
+iteration: 68, rel resid: 0.00039155531843441645
+iteration: 69, rel resid: 0.0003537374018038606
+iteration: 70, rel resid: 0.000324457790438232
+iteration: 71, rel resid: 0.0002940225467839688
+iteration: 72, rel resid: 0.00026472961831990483
+iteration: 73, rel resid: 0.00023959800410804444
+iteration: 74, rel resid: 0.00021533491402235013
+iteration: 75, rel resid: 0.00019357316317833068
+iteration: 76, rel resid: 0.0001753413811394589
+iteration: 77, rel resid: 0.00015780883207103678
+iteration: 78, rel resid: 0.00014249606853679284
+iteration: 79, rel resid: 0.00012877381678693095
+iteration: 80, rel resid: 0.00011574210949077902
+iteration: 81, rel resid: 0.00010564006145124444
+iteration: 82, rel resid: 9.420849406896074e-05
+iteration: 83, rel resid: 8.420072478230478e-05
+iteration: 84, rel resid: 7.518777870454251e-05
+iteration: 85, rel resid: 6.695948554788543e-05
+iteration: 86, rel resid: 5.962489272335757e-05
+iteration: 87, rel resid: 5.258576312779625e-05
+iteration: 88, rel resid: 4.6790579022768396e-05
+iteration: 89, rel resid: 4.080093401476828e-05
+iteration: 90, rel resid: 3.5749704714131715e-05
+iteration: 91, rel resid: 3.1874071474123956e-05
+iteration: 92, rel resid: 2.8478392272447124e-05
+iteration: 93, rel resid: 2.533058869477038e-05
+iteration: 94, rel resid: 2.2512556575602654e-05
+iteration: 95, rel resid: 1.980428280327239e-05
+iteration: 96, rel resid: 1.736407071697103e-05
+iteration: 97, rel resid: 1.522567607844649e-05
+iteration: 98, rel resid: 1.339520829976292e-05
+iteration: 99, rel resid: 1.1789358831706285e-05
+iteration: 100, rel resid: 1.0440747234202497e-05
+iteration: 101, rel resid: 9.36147344453063e-06
+GMRES solve
+Converged after 101 iterations to a residual of 9.36147344453063e-06
+Time weight vector: 39.903586
+Time sort         : 3.701868
+Time data transfer: 38.591479
+Time P2M          : 72.596094
+Time M2M          : 4.352834
+Time M2P          : 218.007770
+Time P2P          : 1112.772685
+	Time analy: 0.000000
+Solve time        : 1511.814295s
+
+Calculate Esolv
+Calculating solvation energy for region 1, stored in E_solv[0]
+4872 of 927184 analytical integrals for phi_reac calculation in region 1
+Time Esolv: 314.804177s
+Region 1: Esolv = -0.093658 kcal/mol = -0.391865 kJ/mol
+
+Calculate Esurf
+Time Esurf: 0.024834s
+
+Calculate Ecoul
+Calculate Coulomb energy for region 1
+Region 1: Ecoul = -349218071.913118 kcal/mol = -1461128412.884486 kJ/mol
+Time Ecoul: 2.863893s
+
+--------------------------------
+Totals:
+Esolv = -0.093658 kcal/mol
+Ecoul = -349218071.913118 kcal/mol
+Esurf = 0.000000 kcal/mol
+
+Time = 1989.197156 s
